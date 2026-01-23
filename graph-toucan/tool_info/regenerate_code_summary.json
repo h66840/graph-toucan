@@ -1,0 +1,360 @@
+{
+  "total_files": 32,
+  "regenerated": 32,
+  "error": 0,
+  "total_tokens": 164479,
+  "results": [
+    {
+      "file": "mina-archive-node-api-query-events.py",
+      "tool_name": "mina-archive-node-api-query-events",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1185,
+        "completion_tokens": 872,
+        "total_tokens": 2057
+      },
+      "error": null
+    },
+    {
+      "file": "blockscout-mcp-server-nft_tokens_by_address.py",
+      "tool_name": "blockscout-mcp-server-nft_tokens_by_address",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1531,
+        "completion_tokens": 1595,
+        "total_tokens": 3126
+      },
+      "error": null
+    },
+    {
+      "file": "npm-sentinel-mcp-npmDeprecated.py",
+      "tool_name": "npm-sentinel-mcp-npmDeprecated",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1464,
+        "completion_tokens": 1625,
+        "total_tokens": 3089
+      },
+      "error": null
+    },
+    {
+      "file": "coin-mcp-server-getCoinInfo.py",
+      "tool_name": "coin-mcp-server-getCoinInfo",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1738,
+        "completion_tokens": 1773,
+        "total_tokens": 3511
+      },
+      "error": null
+    },
+    {
+      "file": "kuran-ı-kerim-quran-api-server-get_quran_info.py",
+      "tool_name": "kuran-ı-kerim-quran-api-server-get_quran_info",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1462,
+        "completion_tokens": 1809,
+        "total_tokens": 3271
+      },
+      "error": null
+    },
+    {
+      "file": "akshare-one-mcp-server-get_income_statement.py",
+      "tool_name": "akshare-one-mcp-server-get_income_statement",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1304,
+        "completion_tokens": 2059,
+        "total_tokens": 3363
+      },
+      "error": null
+    },
+    {
+      "file": "akshare-one-mcp-server-get_cash_flow.py",
+      "tool_name": "akshare-one-mcp-server-get_cash_flow",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1383,
+        "completion_tokens": 2181,
+        "total_tokens": 3564
+      },
+      "error": null
+    },
+    {
+      "file": "semantic-scholar-academic-research-mcp-get_semantic_scholar_paper_recommendations.py",
+      "tool_name": "semantic-scholar-academic-research-mcp-get_semantic_scholar_paper_recommendations",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1632,
+        "completion_tokens": 2364,
+        "total_tokens": 3996
+      },
+      "error": null
+    },
+    {
+      "file": "app-market-intelligence-app-store-search.py",
+      "tool_name": "app-market-intelligence-app-store-search",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1848,
+        "completion_tokens": 2451,
+        "total_tokens": 4299
+      },
+      "error": null
+    },
+    {
+      "file": "ai-agent-with-mcp-Textract Tool.py",
+      "tool_name": "ai-agent-with-mcp-Textract Tool",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1406,
+        "completion_tokens": 2458,
+        "total_tokens": 3864
+      },
+      "error": null
+    },
+    {
+      "file": "lorenz-woehr-portfolio-get_project_by_slug.py",
+      "tool_name": "lorenz-woehr-portfolio-get_project_by_slug",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1429,
+        "completion_tokens": 2480,
+        "total_tokens": 3909
+      },
+      "error": null
+    },
+    {
+      "file": "pulse-cn-mcp-server-internet-hotspots-aggregator.py",
+      "tool_name": "pulse-cn-mcp-server-internet-hotspots-aggregator",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1216,
+        "completion_tokens": 2590,
+        "total_tokens": 3806
+      },
+      "error": null
+    },
+    {
+      "file": "region-weather-get_weather.py",
+      "tool_name": "region-weather-get_weather",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1347,
+        "completion_tokens": 2758,
+        "total_tokens": 4105
+      },
+      "error": null
+    },
+    {
+      "file": "blockscout-mcp-server-get_transaction_info.py",
+      "tool_name": "blockscout-mcp-server-get_transaction_info",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1993,
+        "completion_tokens": 3018,
+        "total_tokens": 5011
+      },
+      "error": null
+    },
+    {
+      "file": "macrostrat-api-server-find-columns.py",
+      "tool_name": "macrostrat-api-server-find-columns",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1986,
+        "completion_tokens": 3022,
+        "total_tokens": 5008
+      },
+      "error": null
+    },
+    {
+      "file": "box3-statistics-mcp-getMapPlayerBehavior.py",
+      "tool_name": "box3-statistics-mcp-getMapPlayerBehavior",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1574,
+        "completion_tokens": 3079,
+        "total_tokens": 4653
+      },
+      "error": null
+    },
+    {
+      "file": "biomcp-variant_searcher.py",
+      "tool_name": "biomcp-variant_searcher",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2157,
+        "completion_tokens": 3136,
+        "total_tokens": 5293
+      },
+      "error": null
+    },
+    {
+      "file": "bilibili-api-server-search_user.py",
+      "tool_name": "bilibili-api-server-search_user",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2063,
+        "completion_tokens": 3169,
+        "total_tokens": 5232
+      },
+      "error": null
+    },
+    {
+      "file": "chembl-server-example_activity.py",
+      "tool_name": "chembl-server-example_activity",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1370,
+        "completion_tokens": 3205,
+        "total_tokens": 4575
+      },
+      "error": null
+    },
+    {
+      "file": "bitcoin-sv-tools-server-bsv_decodeTransaction.py",
+      "tool_name": "bitcoin-sv-tools-server-bsv_decodeTransaction",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1644,
+        "completion_tokens": 3269,
+        "total_tokens": 4913
+      },
+      "error": null
+    },
+    {
+      "file": "yahoo-finance-server-get_stock_info.py",
+      "tool_name": "yahoo-finance-server-get_stock_info",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1726,
+        "completion_tokens": 3705,
+        "total_tokens": 5431
+      },
+      "error": null
+    },
+    {
+      "file": "macrostrat-api-server-find-units.py",
+      "tool_name": "macrostrat-api-server-find-units",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2429,
+        "completion_tokens": 3747,
+        "total_tokens": 6176
+      },
+      "error": null
+    },
+    {
+      "file": "biomcp-trial_protocol.py",
+      "tool_name": "biomcp-trial_protocol",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2114,
+        "completion_tokens": 3850,
+        "total_tokens": 5964
+      },
+      "error": null
+    },
+    {
+      "file": "lottiefiles-server-search_animations.py",
+      "tool_name": "lottiefiles-server-search_animations",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2300,
+        "completion_tokens": 4018,
+        "total_tokens": 6318
+      },
+      "error": null
+    },
+    {
+      "file": "bazi-calculator-buildBaziFromSolarDatetime.py",
+      "tool_name": "bazi-calculator-buildBaziFromSolarDatetime",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1792,
+        "completion_tokens": 4207,
+        "total_tokens": 5999
+      },
+      "error": null
+    },
+    {
+      "file": "bitcoin-sv-tools-server-bsv_explore.py",
+      "tool_name": "bitcoin-sv-tools-server-bsv_explore",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2092,
+        "completion_tokens": 4442,
+        "total_tokens": 6534
+      },
+      "error": null
+    },
+    {
+      "file": "crossref-mcp-server-get_work_metadata.py",
+      "tool_name": "crossref-mcp-server-get_work_metadata",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1828,
+        "completion_tokens": 4778,
+        "total_tokens": 6606
+      },
+      "error": null
+    },
+    {
+      "file": "bazi-calculator-buildBaziFromLunarDatetime.py",
+      "tool_name": "bazi-calculator-buildBaziFromLunarDatetime",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1775,
+        "completion_tokens": 4946,
+        "total_tokens": 6721
+      },
+      "error": null
+    },
+    {
+      "file": "bazi-calculator-getBaziDetail.py",
+      "tool_name": "bazi-calculator-getBaziDetail",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1882,
+        "completion_tokens": 5157,
+        "total_tokens": 7039
+      },
+      "error": null
+    },
+    {
+      "file": "weather360-server-get_live_weather.py",
+      "tool_name": "weather360-server-get_live_weather",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 1554,
+        "completion_tokens": 5157,
+        "total_tokens": 6711
+      },
+      "error": null
+    },
+    {
+      "file": "game-trends-get_all_trending_games.py",
+      "tool_name": "game-trends-get_all_trending_games",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 2020,
+        "completion_tokens": 5701,
+        "total_tokens": 7721
+      },
+      "error": null
+    },
+    {
+      "file": "price-mcp-server-Steam Games Price Checker.py",
+      "tool_name": "price-mcp-server-Steam Games Price Checker",
+      "status": "regenerated",
+      "token_usage": {
+        "prompt_tokens": 3255,
+        "completion_tokens": 9359,
+        "total_tokens": 12614
+      },
+      "error": null
+    }
+  ]
+}

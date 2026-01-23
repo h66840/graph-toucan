@@ -1,0 +1,997 @@
+[
+  {
+    "name": "q-anon-posts/drops-server-get_posts_by_author_id",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "pok\u00e9mcp-random-pokemon-by-type",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "magic-ui-component-server-getUIComponents",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "package-registry-server-search-nuget-packages",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "ennkaheksa-get_node_info",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "first-mcp-server-example_tool",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "blockscout-mcp-server-__get_instructions__",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_player_win_loss",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_loctypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmCompare",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "ai-lab-mcp-server-get_member_phone",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_spritetypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "openai-agent-library-search_files",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "windows-command-line-mcp-server-get_system_info",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "shadcn/ui-component-reference-server-get_component_examples",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_player_totals",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "ennkaheksa-tools_documentation",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "model-context-protocol-servers-printEnv",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "ennkaheksa-get_node_documentation",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "\u9e23\u6f6e-mcp-server-get_artifact_info",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "boardgamegeek-api-server-bgg-trade-finder",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmPackageReadme",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "windows-command-line-mcp-server-get_scheduled_tasks",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "powershell-exec-server-generate_bigfix_action_script",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "package-registry-server-get-golang-package-details",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "magic-ui-component-server-getWidgets",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "sherlock-mcp-server-get_nsfw_links",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "shadcn/ui-component-reference-server-get_component_details",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "trends-hub-get-douyin-trending",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "windows-command-line-mcp-server-execute_powershell",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "magic-ui-component-server-getMotion",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "quickchart-server-download_chart",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_tabletypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "votars-mcp-Votars fetch a specific transcript",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "mlb-stats-server-get_schedule",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "sherlock-mcp-server-get_links",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "lyrical-mcp-health_check",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "powershell-exec-server-get_running_services",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmMaintenance",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "ennkaheksa-search_node_properties",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "windows-command-line-mcp-server-execute_command",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "powershell-exec-server-run_powershell_with_progress",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "suricata-network-traffic-analysis-server-get_stats_from_pcap_file",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "powershell-exec-server-generate_bigfix_relevance_script",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "yt-dlp-video-and-audio-downloader-download_video",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "japanese-text-analyzer-count_words",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "package-registry-server-get-cargo-package-details",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "internet-speed-test-measure_jitter",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "steam-statistics-get_top_games",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "internet-speed-test-measure_latency",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "text-editor-mcp-server-text_editor",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "aurora-documentation-get_doc_summary",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "package-registry-server-get-pypi-package-details",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_player_rankings",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "pypi-mcp-server-get_package_releases",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "pok\u00e9mcp-random-pokemon-from-region",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "opendota-api-server-get_player_wordcloud",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "remote-shell-server-shell-exec",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "hugeicons-mcp-server-get_platform_usage",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "ennkaheksa-get_node_for_task",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "github-trending-get_github_trending_developers",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "think-tool-server-think",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "opendota-api-server-get_player_recent_matches",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmSize",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmAlternatives",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "game-trends-get_epic_free_games",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "pulse-cn-mcp-server-get-weibo-hotspots",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "model-context-protocol-reference-servers-printEnv",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "ennkaheksa-validate_workflow",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "weather-information-server-ping",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "databutton-submit_app_requirements",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmChangelogAnalysis",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_public_matches",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "powershell-exec-server-ensure_directory",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "package-registry-server-list-nuget-package-versions",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "atlas-docs-get_docs_full",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "game-trends-get_epic_trending_games",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "game-trends-get_steam_top_sellers",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "boardgamegeek-api-server-bgg-recommender",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_varptypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "magic-ui-component-server-getButtons",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "think-mcp-server-think",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "package-registry-server-get-npm-package-details",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "think-tool-server-think",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "lilith-shell-execute_command",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmQuality",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "openai-agent-library-get_github_file",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "openai-agent-library-get_code_examples",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "project-ingest-mcp-server-project_tree",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "model-context-protocol-servers-getResourceReference",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "japanese-text-analyzer-count_chars",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "internet-speed-test-measure_download_speed",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_spottypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "rapidapi-get_user_recent_tweets",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "steam-statistics-get_player_stats",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "windows-command-line-mcp-server-get_service_info",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "powershell-exec-server-generate_intune_script_pair",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "weather-information-server-health_check",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmDeps",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "model-context-protocol-servers-longRunningOperation",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "project-ingest-mcp-server-file_content",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmSearch",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "google-workshop-mcp-server-simple_test",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "kroki-server-download_diagram",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "model-context-protocol-reference-servers-echo",
+    "category": "Communication Tools",
+    "reason": "Primary label: Communication Tools"
+  },
+  {
+    "name": "powershell-exec-server-generate_bigfix_script_pair",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_match_data",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "opendota-api-server-get_heroes",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "windows-command-line-mcp-server-list_running_processes",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_objtypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "magic-ui-component-server-getLayout",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "trends-hub-get-bilibili-rank",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "game-trends-get_all_trending_games",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "openai-agent-library-list_github_structure",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "python-safe-sandbox-execution-server-python_exec",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_match_heroes",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "opendota-api-server-get_player_by_id",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "powershell-exec-server-generate_script_from_template",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "lyrical-mcp-ping",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_varbittypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "powershell-exec-server-run_powershell",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "ennkaheksa-get_templates_for_task",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "ennkaheksa-get_database_statistics",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "powershell-exec-server-get_event_logs",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "windows-command-line-mcp-server-list_allowed_commands",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "openai-agent-library-get_api_docs",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_invtypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "shadcn/ui-component-reference-server-list_shadcn_components",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "powershell-exec-server-generate_custom_script",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "game-trends-get_steam_trending_games",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "chromium-latest-commit-get_chromium_latest_commit",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "pypi-mcp-server-get_package_info",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-get_file_details",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "powershell-exec-server-get_processes",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "ennkaheksa-get_property_dependencies",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "code-runner-mcp-server-run-code",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "think-tool-server-get_thoughts",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "package-registry-server-list-cargo-package-versions",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_soundtypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "aurora-documentation-list_docs",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-list_data_files",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "powershell-exec-server-get_system_info",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "openai-agent-library-run_diagnostics",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "think-tool-server-get_thought_stats",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "ennkaheksa-validate_node_operation",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_pro_players",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "ennkaheksa-list_ai_tools",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "example-mcp-server-hello",
+    "category": "Communication Tools",
+    "reason": "Primary label: Communication Tools"
+  },
+  {
+    "name": "ennkaheksa-get_node_essentials",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "yt-dlp-video-and-audio-downloader-download_audio",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_data_file",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "magic-ui-component-server-getMedia",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "smithery-hello-hello",
+    "category": "Communication Tools",
+    "reason": "Primary label: Communication Tools"
+  },
+  {
+    "name": "game-trends-get_steam_most_played",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "steam-statistics-get_popular_genres",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "model-context-protocol-servers-echo",
+    "category": "Communication Tools",
+    "reason": "Primary label: Communication Tools"
+  },
+  {
+    "name": "ai-lab-mcp-server-get_members",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "opendota-api-server-get_player_peers",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "package-registry-server-list-pypi-package-versions",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "terminal-mcp-server-execute_command",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "q-anon-posts/drops-server-get_timeline_summary",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "pok\u00e9mcp-random-pokemon",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "package-registry-server-list-golang-package-versions",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmLatest",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "app-market-intelligence-app-store-ratings",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "weather-server-health_check",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_seqtypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmDeprecated",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "boardgamegeek-api-server-bgg-user",
+    "category": "Social Media",
+    "reason": "Primary label: Social Media"
+  },
+  {
+    "name": "ennkaheksa-validate_workflow_expressions",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "mlb-stats-server-get_last_game",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "steam-statistics-get_game_genres",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "mlb-stats-server-get_next_game",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "opendota-api-server-get_pro_matches",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmScore",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "sourcebot-code-search-server-get_file_source",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_iftypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "ennkaheksa-validate_workflow_connections",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmMaintainers",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_player_heroes",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_rowtypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmTypes",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "byted-fe-resources-list_library_components",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "ennkaheksa-validate_node_minimal",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "opendota-api-server-get_hero_stats",
+    "category": "Gaming",
+    "reason": "Primary label: Gaming"
+  },
+  {
+    "name": "email-sender-server-send_email",
+    "category": "Communication Tools",
+    "reason": "Primary label: Communication Tools"
+  },
+  {
+    "name": "ennkaheksa-list_nodes",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "magic-ui-component-server-getDevices",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "think-tool-server-clear_thoughts",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "weather-server-ping",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "votars-mcp-Votars fetch recent transcripts",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "npm-sentinel-mcp-npmVersions",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "openai-agent-library-search_github",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "windows-command-line-mcp-server-get_network_info",
+    "category": "Operating System",
+    "reason": "Primary label: Operating System"
+  },
+  {
+    "name": "project-ingest-mcp-server-project_summary",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  },
+  {
+    "name": "aurora-documentation-search_docs",
+    "category": "Memory Management",
+    "reason": "Primary label: Memory Management"
+  },
+  {
+    "name": "model-context-protocol-reference-servers-longRunningOperation",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "powershell-exec-server-generate_intune_remediation_script",
+    "category": "Development Tools",
+    "reason": "Primary label: Development Tools"
+  },
+  {
+    "name": "old-school-runescape-wiki-and-data-server-search_npctypes",
+    "category": "File Management",
+    "reason": "Primary label: File Management"
+  }
+]

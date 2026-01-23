@@ -8,3 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Third-party repositories
+third_party/
+datasets/
+experiments/

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .controls {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .control-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        input,
+        select,
+        button {
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 10px 25px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .sample-container {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .sample-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .sample-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .badge-modified {
+            background: #28a745;
+            color: white;
+        }
+
+        .badge-original {
+            background: #6c757d;
+            color: white;
+        }
+
+        .field {
+            margin-bottom: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .field-name {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .field-value {
+            color: #495057;
+            line-height: 1.6;
+        }
+
+        .json-viewer {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .message-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .message-item {
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid;
+        }
+
+        .message-user {
+            background: #e3f2fd;
+            border-left-color: #2196f3;
+        }
+
+        .message-assistant {
+            background: #f3e5f5;
+            border-left-color: #9c27b0;
+        }
+
+        .message-tool {
+            background: #fff3e0;
+            border-left-color: #ff9800;
+        }
+
+        .message-role {
+            font-weight: 600;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+        }
+
+        .message-content {
+            color: #495057;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #dc3545;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            padding: 8px 16px;
+        }
+
+        .pagination .current-page {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .filter-section {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .filter-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #495057;
+        }
+
+        .subset-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .subset-button {
+            padding: 8px 16px;
+            background: white;
+            border: 2px solid #dee2e6;
+            color: #495057;
+            font-size: 13px;
+        }
+
+        .subset-button:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .subset-button.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .control-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dataset Viewer</h1>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-label">Total Samples</div>
+                    <div class="stat-value" id="totalSamples">-</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Modified</div>
+                    <div class="stat-value" id="modifiedSamples">-</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Original</div>
+                    <div class="stat-value" id="originalSamples">-</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="control-row">
+                <div class="control-group">
+                    <label for="indexInput">Sample Index:</label>
+                    <input type="number" id="indexInput" value="0" min="0">
+                </div>
+                <button onclick="loadSample()">Load Sample</button>
+                <button onclick="previousSample()">Previous</button>
+                <button onclick="nextSample()">Next</button>
+                <button onclick="randomSample()">Random</button>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-title">Quick Filters:</div>
+                <div class="control-row">
+                    <div class="control-group">
+                        <label for="subsetNameFilter">Subset Name:</label>
+                        <input type="text" id="subsetNameFilter" placeholder="Enter subset name (optional)">
+                    </div>
+                    <div class="control-group">
+                        <label for="isModifiedFilter">Is Modified:</label>
+                        <select id="isModifiedFilter">
+                            <option value="">All</option>
+                            <option value="true">Modified</option>
+                            <option value="false">Original</option>
+                        </select>
+                    </div>
+                    <div class="control-group">
+                        <label for="modifiedTypeFilter">Modified Type:</label>
+                        <select id="modifiedTypeFilter">
+                            <option value="">All</option>
+                            <option value="miss-param">miss-param</option>
+                        </select>
+                    </div>
+                    <button onclick="applyFilter()">Apply Filter</button>
+                    <button onclick="clearFilter()">Clear Filter</button>
+                </div>
+                <div id="subsetButtons" class="subset-buttons" style="margin-top: 15px;"></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="sampleContent">
+                <div class="loading">Loading dataset information...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        let totalSamples = 0;
+        let filteredIndices = null;
+
+        // 加载数据集信息和统计
+        async function loadDatasetInfo() {
+            try {
+                const [infoRes, statsRes] = await Promise.all([
+                    fetch('/api/dataset/info'),
+                    fetch('/api/dataset/stats')
+                ]);
+
+                const infoData = await infoRes.json();
+                const statsData = await statsRes.json();
+
+                if (infoData.success && statsData.success) {
+                    totalSamples = infoData.total;
+                    document.getElementById('totalSamples').textContent = totalSamples;
+                    document.getElementById('modifiedSamples').textContent = statsData.modified_samples;
+                    document.getElementById('originalSamples').textContent = statsData.unmodified_samples;
+
+                    // 创建subset快速筛选按钮
+                    const subsetButtons = document.getElementById('subsetButtons');
+                    subsetButtons.innerHTML = '';
+                    for (const [subset, count] of Object.entries(statsData.subset_distribution)) {
+                        const btn = document.createElement('button');
+                        btn.className = 'subset-button';
+                        btn.textContent = `${subset} (${count})`;
+                        btn.onclick = () => filterBySubset(subset, btn);
+                        subsetButtons.appendChild(btn);
+                    }
+
+                    document.getElementById('indexInput').max = totalSamples - 1;
+                    loadSample();
+                }
+            } catch (error) {
+                console.error('Error loading dataset info:', error);
+            }
+        }
+
+        async function loadSample() {
+            const indexInput = document.getElementById('indexInput');
+            let index = parseInt(indexInput.value);
+
+            // 如果有筛选结果，使用筛选后的索引
+            if (filteredIndices !== null && filteredIndices.length > 0) {
+                if (index >= filteredIndices.length) {
+                    index = 0;
+                }
+                currentIndex = index;
+                index = filteredIndices[currentIndex];
+            } else {
+                currentIndex = index;
+            }
+
+            const content = document.getElementById('sampleContent');
+            content.innerHTML = '<div class="loading">Loading sample...</div>';
+
+            try {
+                const response = await fetch(`/api/dataset/sample?index=${index}`);
+                const result = await response.json();
+
+                if (result.success) {
+                    displaySample(result);
+                    indexInput.value = currentIndex;
+                } else {
+                    content.innerHTML = `<div class="error">Error: ${result.error}</div>`;
+                }
+            } catch (error) {
+                content.innerHTML = `<div class="error">Error loading sample: ${error.message}</div>`;
+            }
+        }
+
+        function displaySample(result) {
+            const data = result.data;
+            const content = document.getElementById('sampleContent');
+
+            let html = '<div class="sample-container">';
+            html += '<div class="sample-header">';
+            html += `<div class="sample-title">Sample #${result.index} / ${result.total - 1}</div>`;
+            if (data.is_modified) {
+                html += '<span class="badge badge-modified">Modified</span>';
+            } else {
+                html += '<span class="badge badge-original">Original</span>';
+            }
+            html += '</div>';
+
+            // 显示各个字段
+            for (const [key, value] of Object.entries(data)) {
+                if (key === 'messages' && Array.isArray(value)) {
+                    html += `<div class="field">`;
+                    html += `<div class="field-name">Messages (${value.length} messages)</div>`;
+                    html += '<div class="message-list">';
+                    value.forEach((msg, idx) => {
+                        const roleClass = msg.role ? `message-${msg.role}` : 'message-user';
+                        html += `<div class="message-item ${roleClass}">`;
+                        html += `<div class="message-role">${msg.role || 'unknown'}</div>`;
+                        html += `<div class="message-content">${escapeHtml(formatMessageContent(msg.content))}</div>`;
+                        html += '</div>';
+                    });
+                    html += '</div></div>';
+                } else if (key === 'tools' && Array.isArray(value)) {
+                    html += `<div class="field">`;
+                    html += `<div class="field-name">Tools (${value.length} tools)</div>`;
+                    html += `<div class="json-viewer">${escapeHtml(JSON.stringify(value, null, 2))}</div>`;
+                    html += '</div>';
+                } else if (key === 'modification_info' && typeof value === 'object' && value !== null) {
+                    html += `<div class="field">`;
+                    html += `<div class="field-name">Modification Info</div>`;
+                    html += `<div class="json-viewer">${escapeHtml(JSON.stringify(value, null, 2))}</div>`;
+                    html += '</div>';
+                } else if (typeof value === 'object' && value !== null) {
+                    html += `<div class="field">`;
+                    html += `<div class="field-name">${key}</div>`;
+                    html += `<div class="json-viewer">${escapeHtml(JSON.stringify(value, null, 2))}</div>`;
+                    html += '</div>';
+                } else {
+                    html += `<div class="field">`;
+                    html += `<div class="field-name">${key}</div>`;
+                    html += `<div class="field-value">${escapeHtml(String(value))}</div>`;
+                    html += '</div>';
+                }
+            }
+
+            html += '</div>';
+            content.innerHTML = html;
+        }
+
+        function formatMessageContent(content) {
+            if (typeof content === 'string') {
+                // 尝试解析JSON
+                try {
+                    const parsed = JSON.parse(content);
+                    return JSON.stringify(parsed, null, 2);
+                } catch {
+                    return content;
+                }
+            } else if (typeof content === 'object') {
+                return JSON.stringify(content, null, 2);
+            }
+            return String(content);
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function previousSample() {
+            const maxIndex = filteredIndices !== null ? filteredIndices.length - 1 : totalSamples - 1;
+            currentIndex = Math.max(0, currentIndex - 1);
+            document.getElementById('indexInput').value = currentIndex;
+            loadSample();
+        }
+
+        function nextSample() {
+            const maxIndex = filteredIndices !== null ? filteredIndices.length - 1 : totalSamples - 1;
+            currentIndex = Math.min(maxIndex, currentIndex + 1);
+            document.getElementById('indexInput').value = currentIndex;
+            loadSample();
+        }
+
+        function randomSample() {
+            const maxIndex = filteredIndices !== null ? filteredIndices.length - 1 : totalSamples - 1;
+            currentIndex = Math.floor(Math.random() * (maxIndex + 1));
+            document.getElementById('indexInput').value = currentIndex;
+            loadSample();
+        }
+
+        async function applyFilter() {
+            const subsetName = document.getElementById('subsetNameFilter').value;
+            const isModified = document.getElementById('isModifiedFilter').value;
+            const modifiedType = document.getElementById('modifiedTypeFilter').value;
+
+            if (!subsetName && !isModified && !modifiedType) {
+                alert('Please select at least one filter condition');
+                return;
+            }
+
+            try {
+                // 构建查询参数
+                const params = new URLSearchParams();
+                if (subsetName) {
+                    params.append('subset_name', subsetName);
+                }
+                if (isModified) {
+                    params.append('is_modified', isModified);
+                }
+                if (modifiedType) {
+                    params.append('modified_type', modifiedType);
+                }
+
+                const response = await fetch(`/api/dataset/filter?${params.toString()}`);
+                const result = await response.json();
+
+                if (result.success) {
+                    filteredIndices = result.indices;
+                    currentIndex = 0;
+                    document.getElementById('indexInput').value = 0;
+
+                    // 显示应用的过滤条件
+                    const filterInfo = result.filters.join(' AND ');
+                    alert(`Found ${result.total_matches} matching samples\nFilters: ${filterInfo}`);
+                    loadSample();
+                } else {
+                    alert(`Error: ${result.error}`);
+                }
+            } catch (error) {
+                alert(`Error applying filter: ${error.message}`);
+            }
+        }
+
+        function clearFilter() {
+            filteredIndices = null;
+            currentIndex = 0;
+            document.getElementById('indexInput').value = 0;
+            document.getElementById('subsetNameFilter').value = '';
+            document.getElementById('isModifiedFilter').value = '';
+            document.getElementById('modifiedTypeFilter').value = '';
+
+            // 清除subset按钮的active状态
+            document.querySelectorAll('.subset-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            loadSample();
+        }
+
+        async function filterBySubset(subset, button) {
+            // 更新按钮状态
+            document.querySelectorAll('.subset-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+
+            // 应用筛选，保留 is_modified 的设置
+            document.getElementById('subsetNameFilter').value = subset;
+            await applyFilter();
+        }
+
+        // 页面加载时初始化
+        window.onload = () => {
+            loadDatasetInfo();
+        };
+    </script>
+</body>
+
+</html>
