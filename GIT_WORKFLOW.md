@@ -48,6 +48,141 @@ git push
 
 ---
 
+## 🎯 理解 Git 的三个区域
+
+Git 有三个重要区域，理解它们的关系是掌握 Git 的关键：
+
+```
+┌─────────────────┐
+│  Working Dir    │ ← 你实际看到的文件（工作区）
+│   (工作区)       │
+└────────┬────────┘
+         │ git add
+         ↓
+┌─────────────────┐
+│  Staging Area   │ ← 暂存区/索引区（准备 commit 的内容）
+│   (暂存区)       │
+└────────┬────────┘
+         │ git commit
+         ↓
+┌─────────────────┐
+│     HEAD        │ ← 最后一次提交（仓库中的快照）
+│   (当前提交)     │
+└─────────────────┘
+```
+
+### 三个区域的含义
+
+1. **Working Directory (工作区)**
+   - 你实际看到的文件
+   - 修改后的文件会在这里显示为 `modified`
+
+2. **Staging Area (暂存区/索引区)**
+   - 也叫 `Index`
+   - 执行 `git add` 后，文件被添加到这里
+   - 这里的文件会被下一次 `git commit` 提交
+
+3. **HEAD (当前提交)**
+   - 仓库中最后一次提交的快照
+   - 执行 `git commit` 后，暂存区的内容会变成新的 HEAD
+
+### git reset 的原理
+
+```bash
+git reset
+```
+
+**执行过程**：
+1. 将暂存区重置为 HEAD 的状态（撤销 `git add`）
+2. 不改变工作区的文件
+3. Git 比较工作区和新的暂存区，发现差异 → "Unstaged changes"
+
+**图解**：
+```
+之前（git add 后）：
+  Working Dir  ===  Staging Area  ≠  HEAD
+                        ↑
+                   准备提交这些
+
+执行 git reset 后：
+  Working Dir  ≠  Staging Area === HEAD
+                     ↑
+              重置回 HEAD 状态
+              但工作区没变
+              → Unstaged changes!
+```
+
+### 查看暂存区的详细命令
+
+```bash
+# 1. 查看整体状态（最常用）
+git status
+
+# 2. 查看暂存区与 HEAD 的差异
+git diff --cached
+# 或（等价命令）
+git diff --staged
+
+# 3. 查看暂存区的文件列表
+git ls-files -s        # 查看详细信息
+git ls-files           # 只看文件名
+
+# 4. 查看暂存区中特定文件的内容
+git show :README.md
+
+# 5. 查看暂存区改动的统计
+git diff --cached --stat
+```
+
+### 常见场景示例
+
+**场景 1：修改文件后查看状态**
+```bash
+# 修改 README.md
+git status
+# 输出：Changes not staged for commit: README.md
+
+git diff README.md
+# 显示工作区与暂存区的差异
+
+# 如果暂存区是空的，这会显示工作区与 HEAD 的差异
+```
+
+**场景 2：添加文件到暂存区**
+```bash
+git add README.md
+git status
+# 输出：Changes to be committed: README.md
+
+git diff --cached
+# 显示暂存区与 HEAD 的差异（将提交的内容）
+```
+
+**场景 3：撤销暂存**
+```bash
+git reset HEAD README.md
+# 或（简单写法）
+git reset README.md
+
+git status
+# 输出：Changes not staged for commit: README.md
+# 文件回到工作区，但保留修改
+```
+
+**场景 4：完全丢弃工作区的修改**
+```bash
+# 方法 1：从暂存区恢复（如果暂存区有该文件）
+git checkout -- README.md
+
+# 方法 2：从 HEAD 恢复（新命令）
+git restore README.md
+
+# 方法 3：强制重置工作区为 HEAD（危险！会丢失所有未提交的修改）
+git reset --hard HEAD
+```
+
+---
+
 ## 📋 常用 Git 命令
 
 ### 查看状态和历史

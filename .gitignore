@@ -13,3 +13,6 @@ wheels/
 third_party/
 datasets/
 experiments/
+xduts/
+paper/
+doc/

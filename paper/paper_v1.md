@@ -1,10 +1,3 @@
-好的，这是为您生成的完整的论文草稿 `.md` 文档。
-
-这份文档严格遵循了您的 `outline.md` 架构，融合了 `MAGNET` 的图论方法、`TOUCAN` 的真实环境数据、`AgentScaler` 的状态机理论，以及您在 `INNOVATION_SUGGESTIONS.md` 中提出的“有状态模拟（Stateful Mock）”和“拒绝策略”等核心创新点。
-
-您可以直接复制下面的内容保存为 `Graph_Toucan_Paper.md`。
-
-***
 
 ```markdown
 # Graph-Toucan: Synthesizing High-Quality Multi-Turn Tool-Use Data from Real MCP Environments via Graph Translation
